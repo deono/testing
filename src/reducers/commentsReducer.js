@@ -2,7 +2,7 @@ import { SAVE_COMMENT, FETCH_COMMENTS } from "actions/types";
 
 export default (state = [], action) => {
   const { type, payload } = action;
-  console.log("reducer: ", payload);
+  // console.log("reducer: ", payload);
   switch (type) {
     case SAVE_COMMENT:
       return [...state, payload];
